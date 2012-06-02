@@ -1,0 +1,11 @@
+Website: http://www.kramerapps.com/cydia/
+Maintainer: Conrad Kramer <support@kramerapps.com>
+Name: Lock Seconds
+Package: com.conradkramer.lockclockseconds
+Section: Tweaks
+Version: 1.1
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Description: Adds seconds to the lockscreen clock
+ This will add the seconds on to the lockscreen clock. It works on all current iOS versions.
+Sponsor: Conrad Kramer <http://www.kramerapps.com/cydia/>
