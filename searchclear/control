@@ -1,0 +1,9 @@
+Package: com.conradkramer.searchclear
+Name: SearchClear
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Clears the search field after a search!
+Maintainer: Conrad Kramer <support@kramerapps.com>
+Author: Conrad Kramer <support@kramerapps.com>
+Section: Tweaks
