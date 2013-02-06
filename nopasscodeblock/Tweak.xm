@@ -1,3 +1,8 @@
+@interface SBDeviceLockController : NSObject
++ (instancetype)sharedController;
+- (void)_clearBlockedState;
+@end
+
 @interface SBAwayController : NSObject
 - (void)_clearBlockedState;
 - (void)clearBlockedStateAndUpdateUI:(BOOL)update;
@@ -9,8 +14,10 @@
     if (!status) {
         if ([self respondsToSelector:@selector(clearBlockedStateAndUpdateUI:)]) {
             [self clearBlockedStateAndUpdateUI:YES];
-        } else {
+        } else if ([self respondsToSelector:@selector(_clearBlockedState)]) {
             [self _clearBlockedState];
+        } else {
+            [[%c(SBDeviceLockController) sharedController] _clearBlockedState];
         }
     }
 
